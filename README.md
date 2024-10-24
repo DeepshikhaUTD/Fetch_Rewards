@@ -38,13 +38,17 @@ Gender Column (Users Table)
 
 The GENDER column in the df_user table was not standardized, leading to inconsistent representations of gender values such as 'female', 'Female', 'Non-Binary', 'non-binary', and more. During preprocessing, we standardized the values to a consistent format using the following categories:
 
-female
-male
-non_binary
-prefer_not_to_say
-not_specified
-unknown
+  -- female
+  -- male
+  -- non_binary
+  -- prefer_not_to_say
+  -- not_specified
+  -- unknown
 This was done to ensure uniformity in data analysis and eliminate discrepancies caused by inconsistent entries.
+
+Birth_Date Column (Users Table)
+
+There are Users where the Birth_Date is before 1920, aging 100+ years, need clarification to make it is not entry error, for the analysis outliers were identified and removed from the dataset.
 
 - Final Quantity and Sale Issue (Transactions Table)
   
