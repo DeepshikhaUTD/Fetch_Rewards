@@ -61,8 +61,6 @@ It is not entirely clear whether these multiple entries reflect the same item be
 
 In the dataset, there are cases where either Final Quantity or Final Sale is missing for entries tied to the same Barcode and Receipt ID. To address this, I filled the missing values using the average price per unit, calculated based on available entries for the same Barcode and Receipt ID.
 
-This approach assumes scenarios like buy-one-get-one (BOGO) offers or discounts, where it's common for one item to have no associated sale amount but still be recorded in the quantity. By using the average price, we can estimate the missing values while accounting for potential promotional activity without distorting the data.
+This approach assumes scenarios like buy-one-get-one (BOGO) offers or discounts, where it's common for one item to have no associated sale amount but still be recorded in the quantity. By using the average price, I estimated the missing values while accounting for potential promotional activity without distorting the data.
 
-Data Quality Considerations:
-There are multiple entries for the same Receipt ID, where half of the records have either Final Sale or Final Quantity missing. This could indicate bulk purchases, promotional offers, duplicates or possible entry errors.
-Additional clarification from the data source is needed to determine if these multiple entries represent the same item purchased multiple times or if there are inconsistencies in data entry.
+However, additional clarification from the data source is needed to determine if these multiple entries represent the same item purchased multiple times or if there are inconsistencies in data entry.
