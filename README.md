@@ -21,6 +21,8 @@ Standardized GENDER column values to reduce inconsistencies.
 
 Performed binning on the AGE column to count users in age groups.
 
+Data points where the year of birth is earlier than 1940 were removed after detecting outliers through a boxplot and distribution analysis. These entries, such as birthdates set to 1900-01-01, are likely default values in the system.
+
 #**Transactions Table:**
 
 Updated data types for SCAN_DATE, PURCHASE_DATE, FINAL_SALE, FINAL_QUANTITY, and BARCODE.
